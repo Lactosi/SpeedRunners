@@ -1,0 +1,14 @@
+D:\Proyecto\Proyecto\bin\Debug\net8.0\Proyecto.exe
+D:\Proyecto\Proyecto\bin\Debug\net8.0\Proyecto.deps.json
+D:\Proyecto\Proyecto\bin\Debug\net8.0\Proyecto.runtimeconfig.json
+D:\Proyecto\Proyecto\bin\Debug\net8.0\Proyecto.dll
+D:\Proyecto\Proyecto\bin\Debug\net8.0\Proyecto.pdb
+D:\Proyecto\Proyecto\obj\Debug\net8.0\Proyecto.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyecto\Proyecto\obj\Debug\net8.0\Proyecto.AssemblyInfoInputs.cache
+D:\Proyecto\Proyecto\obj\Debug\net8.0\Proyecto.AssemblyInfo.cs
+D:\Proyecto\Proyecto\obj\Debug\net8.0\Proyecto.csproj.CoreCompileInputs.cache
+D:\Proyecto\Proyecto\obj\Debug\net8.0\Proyecto.dll
+D:\Proyecto\Proyecto\obj\Debug\net8.0\refint\Proyecto.dll
+D:\Proyecto\Proyecto\obj\Debug\net8.0\Proyecto.pdb
+D:\Proyecto\Proyecto\obj\Debug\net8.0\Proyecto.genruntimeconfig.cache
+D:\Proyecto\Proyecto\obj\Debug\net8.0\ref\Proyecto.dll
