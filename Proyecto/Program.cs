@@ -4,6 +4,8 @@ public class Program
     public static void Main()
     {
 
+        Console.Clear();
+
         while (true)
         {
            string audioFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "audio");
