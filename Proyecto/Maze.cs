@@ -701,7 +701,7 @@ public class Grid
                     e1 =Math.Max(0, e1-20);
                     Console.Clear();
                     PrintMaze();
-                    Console.WriteLine("Escalaste una colina. -10 ⚡");
+                    Console.WriteLine("Escalaste una colina. -20 ⚡");
                     Console.ReadKey();
                     }
                 }
@@ -784,7 +784,7 @@ public class Grid
                     e2 =Math.Max(0, e2-20);
                     Console.Clear();
                     PrintMaze();
-                    Console.WriteLine("Escalaste una colina. -10 ⚡");
+                    Console.WriteLine("Escalaste una colina. -20 ⚡");
                     Console.ReadKey();
                     }
                 }
