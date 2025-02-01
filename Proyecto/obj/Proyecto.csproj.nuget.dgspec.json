@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyecto\\Proyecto\\Proyecto.csproj": {}
+    "D:\\Proyecto\\Proyecto.csproj": {}
   },
   "projects": {
-    "D:\\Proyecto\\Proyecto\\Proyecto.csproj": {
+    "D:\\Proyecto\\Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyecto\\Proyecto\\Proyecto.csproj",
+        "projectUniqueName": "D:\\Proyecto\\Proyecto.csproj",
         "projectName": "Proyecto",
-        "projectPath": "D:\\Proyecto\\Proyecto\\Proyecto.csproj",
+        "projectPath": "D:\\Proyecto\\Proyecto.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyecto\\Proyecto\\obj\\",
+        "outputPath": "D:\\Proyecto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,6 +42,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

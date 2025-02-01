@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
+using System.Media;
 
 public class Cell : IComparable<Cell>
 {
@@ -671,6 +672,8 @@ public class Grid
                     y2=trees[pos].Item2;
                     recoil2=2;
                 }
+
+                continue;
             }
 
             else{ i--; continue;}
@@ -862,7 +865,7 @@ public class Grid
 
         Console.ReadKey();
         Console.Clear();
-
+        Environment.Exit(0);
     }
 
     public void PrintMaze()

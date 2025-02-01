@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 public class Program
 {
     public static void Main()
@@ -6,6 +6,14 @@ public class Program
 
         while (true)
         {
+           string audioFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "audio");
+        string[] audioFilePaths = {
+            Path.Combine(audioFolderPath, "pixel-dreams.mp3")
+        };
+        BackgroundMusic backgroundMusic = new BackgroundMusic(audioFilePaths);
+
+        backgroundMusic.Play(0);
+
             Console.WriteLine("Bienvenido a SpeedRunners");
             Console.WriteLine("Elija la opcion que desee:");
             Console.WriteLine("(1) Un Jugador");
@@ -106,6 +114,17 @@ public class Program
                 if (t == 2) { n = 20; m = 20; }
                 if (t == 3) { n = 30; m = 30; }
 
+                backgroundMusic.Stop();
+
+                 string audioFolderPath2 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "audio");
+        string[] audioFilePaths2 = {
+            Path.Combine(audioFolderPath2, "gaming-music-8-bit-console.mp3")
+        };
+        BackgroundMusic backgroundMusic2 = new BackgroundMusic(audioFilePaths2);
+
+        backgroundMusic2.Play(0);
+
+                
                 Grid b = new Grid(n, m, sprite, "⬛", false, t);
                 break;
             }
@@ -209,6 +228,15 @@ public class Program
                 if (t == 2) { n = 20; m = 20; }
                 if (t == 3) { n = 35; m = 35; }
 
+                backgroundMusic.Stop();
+
+                 string audioFolderPath2 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "audio");
+        string[] audioFilePaths2 = {
+            Path.Combine(audioFolderPath2, "gaming-music-8-bit-console.mp3")
+        };
+        BackgroundMusic backgroundMusic2 = new BackgroundMusic(audioFilePaths2);
+
+        backgroundMusic2.Play(0);
                 Grid b = new Grid(n, m, sprite[1], sprite[2], true, t);
                 break;
             }
@@ -217,6 +245,7 @@ public class Program
             else if (opcion == "3")
             {
                 Console.Clear();
+                Environment.Exit(0);
                 break;
             }
 
