@@ -1,0 +1,38 @@
+1-Como ejecutar el Proyecto?
+Este proyecto esta diseñado para ser ejecutado en la terminal estandar de Visual Studio Code.
+Para ejecutarlo debe instalar el paquete NAudio que utiliza el juego para reproducir la musica.
+Para instalar este paquete, usar el comando "dotnet add package NAudio" en la terminal de Visual Studio Code.
+
+
+2-Como Jugar?
+Inicialmente al usuario le aparecera el menu del juego, donde debera elegir entre uno o dos jugadores. Luego
+cada jugador debe elegir su personaje con un numero del 1 al 5 como se describira en pantalla. Si introduce H
+aparecera una explicacion detallada de como funciona la habilidad de cada personaje. Cada personaje tiene una cantidad
+prefijada de puntos de vida, energia y pasos por turno, que tambien estan detallados en el menu. Finalmente debera
+elegir el tamaño del laberinto. Una vez terminados estos pasos, comienza el juego y aparecera un laberinto en consola.
+En este laberinto hay 4 tipos de obstaculos esparcidos aleatoriamente:
+-Arbol: Le resta 10 puntos de energia a todos los jugadores que pasen por esa casilla.
+-Montaña: Le resta 20 puntos de energia a todos los jugadores que pasen por esa casilla.
+-Bomba: Le resta 10 puntos de vida al primer jugador que pase por esa casilla.
+-Demonio: Le resta 20 puntos de vida al primer jugador que pase por esa casilla.
+
+Cuando los puntos de vida de un jugador lleguen a 0 este morira y aparecera en su casilla de inicio. De igual forma cuando la
+energia de un jugador llegue a 0 se desmayara y pasara 3 turnos sin poder moverse.
+
+Para moverse por el laberinto se deben usar las teclas W-A-S-D del teclado. Un jugador no se puede mover a una casilla donde 
+haya otro jugador o un muro. El objetivo del juego es llegar a la meta ubicada en la casilla inferior derecha. Una vez que el
+primer jugador alcance esa casilla el juego terminara.
+
+
+3-Detalles de la Implementacion
+
+El codigo esta distribuido en 3 clases principales:
+1-Music: En esta clase se controla la reproduccion de musica en consola
+2-Program: Esta clase contiene el codigo que corresponde a la interaccion del usuario con el menu
+3-Maze: En esta clase esta la mayoria del codigo pesado del proyecto. Al iniciar una partida se crea un nuevo laberinto y se llaman
+a los siguientes metodos:
+GenerateMaze: genera aleatoriamente un laberinto usando el algoritmo Depth First Search
+FindStartPosition: elige las casillas de inicio de cada jugador de acuerdo al laberinto que se genero. este metodo usa un BFS para encontrar
+las casillas mas lejanas a la meta.
+Obstaculos: reparte aleatoriamente los obstaculos por el laberinto.
+Jugar: En este metodo realiza los movimientos de los jugadores en la partida y actualiza las condiciones de cada jugador segun su movimiento.
